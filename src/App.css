@@ -1,0 +1,24 @@
+.panel {
+  position: absolute;
+  top: 680px;
+  left: 10px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  font-size: 26px;
+  height: 50px;
+  /* border-radius: 10px; */
+  background-blend-mode: overlay;
+  outline: 0.1em solid #353535;
+  /* border: 0; */
+  box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+li {
+  list-style: none;
+}
