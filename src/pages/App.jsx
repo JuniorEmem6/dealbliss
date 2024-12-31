@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch coupons and links from backend
-    fetch("http://localhost:5000/api/coupons")
+    fetch("https://dealblissback-production.up.railway.app/api/coupons")
       .then((res) => res.json())
       .then((data) => setCoupons(data));
   }, []);
@@ -49,7 +49,9 @@ const Home = () => {
           </p>
         )}
       </main>
-      <AdminPage url={"http://localhost:5000/api/coupons"} />
+      <AdminPage
+        url={"https://dealblissback-production.up.railway.app/api/coupons"}
+      />
       <InfoSection />
       <Footer />
     </div>

@@ -34,11 +34,14 @@ const AuthInterface = ({ isAuth }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/auth/sign-in", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, password }),
-    });
+    const response = await fetch(
+      "https://dealblissback-production.up.railway.app/auth/sign-in",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      }
+    );
 
     if (response.status === 200) {
       isAuth(true);
@@ -84,7 +87,7 @@ const AdminPanel = () => {
 
   React.useEffect(() => {
     // Fetch coupons and links from backend
-    fetch("http://localhost:5000/admin/coupons")
+    fetch("https://dealblissback-production.up.railway.app/admin/coupons")
       .then((res) => res.json())
       .then((data) => {
         setCoupons(data);
@@ -105,26 +108,31 @@ const AdminPanel = () => {
         )}
       </main>
 
-      <AdminPage url={"http://localhost:5000/admin/coupons"} />
+      <AdminPage
+        url={"https://dealblissback-production.up.railway.app/admin/coupons"}
+      />
     </>
   );
 };
 
 const CouponCard = ({ coupon }) => {
   const approveCoupon = async () => {
-    const response = await fetch("http://localhost:5000/admin/coupons", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        discount: coupon.discount,
-        description: coupon.description,
-        code: coupon.code,
-        expiry: coupon.expiry,
-        link: coupon.link,
-        total: coupon.total,
-        today: coupon.today,
-      }),
-    });
+    const response = await fetch(
+      "https://dealblissback-production.up.railway.app/admin/coupons",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          discount: coupon.discount,
+          description: coupon.description,
+          code: coupon.code,
+          expiry: coupon.expiry,
+          link: coupon.link,
+          total: coupon.total,
+          today: coupon.today,
+        }),
+      }
+    );
 
     if (response.status === 201) {
       alert("Coupon added successfully!");
