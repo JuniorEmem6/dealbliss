@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const AdminPage = ({ url }) => {
-  const [amount, setAmount] = useState("");
+  const [discount, setDiscount] = useState("");
   const [description, setDescription] = useState("");
   let [coupon, setCoupon] = useState("");
   let [link, setLink] = useState("");
@@ -16,13 +16,10 @@ const AdminPage = ({ url }) => {
       link = "https://ng.oraimo.com?affiliate_code=gQU41bWUcc";
     }
     let newCoupon = {
-      amount,
-      coupon,
+      discount,
+      code,
       description,
       link,
-      today: 0,
-      total: 0,
-      expiry: "limited time offer",
     };
 
     const response = await fetch(url, {
@@ -63,14 +60,14 @@ const AdminPage = ({ url }) => {
           <input
             type="text"
             placeholder="e.g 40% OFF"
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
+            value={discount}
+            onChange={(e) => setDiscount(e.target.value)}
             className="p-2 w-full rounded ring-blue-300"
           />
         </div>
         <div>
           <label htmlFor="" className="text-gray-800 text-[15px] ml-[3px]">
-            Affiliate Link
+            Store Link
           </label>
           <input
             type="url"

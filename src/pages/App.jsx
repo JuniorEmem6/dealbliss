@@ -12,9 +12,11 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch coupons and links from backend
-    fetch("https://dealblissback-production.up.railway.app/api/coupons")
+    fetch("https://dealblissngbackkend-production.up.railway.app/api/coupons")
       .then((res) => res.json())
-      .then((data) => setCoupons(data));
+      .then((data) => {
+        setCoupons(data);
+      });
   }, []);
 
   return (
@@ -50,7 +52,9 @@ const Home = () => {
         )}
       </main>
       <AdminPage
-        url={"https://dealblissback-production.up.railway.app/api/coupons"}
+        url={
+          "https://dealblissngbackkend-production.up.railway.app/api/coupons"
+        }
       />
       <InfoSection />
       <Footer />
@@ -58,7 +62,7 @@ const Home = () => {
   );
 };
 
-const CouponCard = ({ discount, description, code, link, expiry }) => (
+const CouponCard = ({ _id, discount, description, code, link, used }) => (
   <div className="bg-white rounded-lg p-6 shadow-lg border hover:scale-105 transition-transform">
     <div className="flex items-center mb-4">
       <img src={Logo} alt="Oraimo Nigeria Logo" className="h-8 mr-2" />
@@ -76,19 +80,26 @@ const CouponCard = ({ discount, description, code, link, expiry }) => (
     </div>
     <div className="flex bg-gray-100 items-center justify-between p-[5px]">
       <span className="text-[11px]">
-        Total Uses: <span class="total-count">0</span>
-      </span>
-      <span className="text-[11px]">
-        Today&apos;s Uses: <span class="daily-count">0</span>
+        Total Uses: <span class="total-count">{used}</span>
       </span>
     </div>
-    <div className="text-sm text-gray-600 mt-[6px]">Valid until {expiry}</div>
-    <a
-      href={link}
+    <button
       className="block bg-green-600 text-white mt-4 text-center px-4 py-2 rounded hover:bg-green-700"
+      onClick={() => {
+        fetch(
+          `https://dealblissngbackkend-production.up.railway.app/api/coupons/${_id}/click`,
+          {
+            method: "POST",
+          }
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          });
+      }}
     >
-      Shop Now
-    </a>
+      <a href={link}>Shop Now</a>
+    </button>
   </div>
 );
 
