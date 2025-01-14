@@ -90,7 +90,7 @@ const AdminPage = ({ url }) => {
         </div>
         <button
           type="submit"
-          className="bg-green-500 text-white py-2 px-4 rounded w-[300px]"
+          className="bg-green-500 text-white py-2 px-4 rounded w-[300px] lg:ml-[730px]"
         >
           Submit Code
         </button>

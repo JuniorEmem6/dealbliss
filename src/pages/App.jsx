@@ -21,35 +21,40 @@ const Home = () => {
 
   return (
     <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
-      <div className="flex items-center lg:justify-between">
+      <div className="flex items-center">
         <img
           src={LogoOraimo}
           alt="coupon codes and affiliate links"
-          className="h-[50px] w-[50px] bg-white"
+          className="h-[50px] w-[50px] bg-white ml-[30px]"
         />
         <img
           src={Logo}
           alt="coupon codes and affiliate links"
-          className="h-[50px] w-[50px] ml-[210px] bg-white"
+          className="h-[50px] w-[50px] ml-[25px] bg-white"
         />
       </div>
-      <header className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-[#00a046] to-[#00c853] text-white p-6 rounded-lg mt-[14px]">
+      {/* <header className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-[#00a046] to-[#00c853] text-white p-6 rounded-lg mt-[14px]">
         <h1 className="text-[20px] font-bold leading-[10px]">
           &#x1f3f7;&#xfe0f; Oraimo Deals & Coupons
         </h1>
         <p className="text-sm mt-2 md:mt-0">Save big on Oraimo products!</p>
-      </header>
+      </header> */}
 
       <CouponCarousel />
 
+      <div className="text-center mt-[15px]">
+        <h1 className="leading-[37px] font-bold text-[35px]">
+          Oraimo Discount Code: Up to 30% + Extra 5% Code{" "}
+        </h1>
+        <p className="mt-[10px]">The hub for the best Oraimo Discount Code</p>
+      </div>
+
       <main className="mt-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {coupons.length > 0 ? (
-          coupons.map((coupon, index) => <CouponCard key={index} {...coupon} />)
-        ) : (
-          <p className="text-gray-800 flex justify-center items-center h-[300px] text-[20px]">
-            No available deals now
-          </p>
-        )}
+        {coupons.length > 0
+          ? coupons.map((coupon, index) => (
+              <CouponCard key={index} {...coupon} />
+            ))
+          : ""}
       </main>
       <AdminPage
         url={

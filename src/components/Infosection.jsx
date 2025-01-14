@@ -6,14 +6,11 @@ const InfoSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(
-      "https://dealblissback-production.up.railway.app/api/email",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      }
-    );
+    const response = await fetch("http://localhost:3000/api/email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
 
     if (response.status === 201) {
       alert("Email added successfully!");
@@ -38,7 +35,7 @@ const InfoSection = () => {
           />
           <button
             type="submit"
-            className="bg-[#00a046] text-white p-[3px] mt-[10px] ml-[100px] lg:ml-[850px] rounded-[20px] w-[90px]"
+            className="bg-green-500 text-white p-[3px] mt-[10px] ml-[100px] lg:ml-[850px] rounded-[20px] w-[110px]"
           >
             Sign Up
           </button>
