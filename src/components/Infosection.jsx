@@ -6,7 +6,7 @@ const InfoSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:3000/api/email", {
+    const response = await fetch("https://dealblissngbackkend-production.up.railway.app/api/email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
