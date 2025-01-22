@@ -20,7 +20,10 @@ const InfoSection = () => {
   };
   return (
     <>
-      <div className="bg-white rounded-[10px] p-[13px] mb-[10px] border shadow-lg mt-[20px]">
+      <div
+        className="bg-white rounded-[10px] p-[13px] mb-[10px] border shadow-lg mt-[20px]"
+        id="contact"
+      >
         <h2 className="text-center text-black font-bold">Never Miss a Deal!</h2>
         <p className="text-[14px] text-center">
           Sign up for exclusive discounts and deals.
@@ -41,7 +44,10 @@ const InfoSection = () => {
           </button>
         </form>
       </div>
-      <div className="lg:flex lg:items-start lg:justify-space-between lg:w-[100%] lg:mt-[50px]">
+      <div
+        className="lg:flex lg:items-start lg:justify-space-between lg:w-[100%] lg:mt-[50px]"
+        id="use"
+      >
         <div className="mt-[35px] lg:w-[900px]">
           <h1 className="text-left lg:text-center text-[19px] font-bold">
             How to use Oraimo Discount Code

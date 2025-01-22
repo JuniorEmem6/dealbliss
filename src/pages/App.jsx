@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-// import { FaRegCopy } from "react-icons/fa";
 import Footer from "../components/Footer";
-import LogoOraimo from "../assets/logo.png";
 import Logo from "../assets/oraimoLogo.png";
 import CouponCarousel from "../components/Banner";
 import AdminPage from "./Admin";
 import InfoSection from "../components/Infosection";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const [coupons, setCoupons] = useState([]);
@@ -21,35 +20,21 @@ const Home = () => {
 
   return (
     <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
-      <div className="flex items-center">
-        <img
-          src={LogoOraimo}
-          alt="coupon codes and affiliate links"
-          className="h-[50px] w-[50px] bg-white ml-[30px]"
-        />
-        <img
-          src={Logo}
-          alt="coupon codes and affiliate links"
-          className="h-[50px] w-[50px] ml-[25px] bg-white"
-        />
-      </div>
-      {/* <header className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-[#00a046] to-[#00c853] text-white p-6 rounded-lg mt-[14px]">
-        <h1 className="text-[20px] font-bold leading-[10px]">
-          &#x1f3f7;&#xfe0f; Oraimo Deals & Coupons
-        </h1>
-        <p className="text-sm mt-2 md:mt-0">Save big on Oraimo products!</p>
-      </header> */}
+      <Navbar />
 
-      <CouponCarousel />
-
-      <div className="text-center mt-[15px]">
-        <h1 className="leading-[37px] font-bold text-[35px]">
+      <div className="text-center mt-[40px]" id="home">
+        <h1 className="leading-[25px] font-medium text-[26px]">
           Oraimo Discount Code: Up to 30% + Extra 5% Code{" "}
         </h1>
         <p className="mt-[10px]">The hub for the best Oraimo Discount Code</p>
       </div>
 
-      <main className="mt-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <CouponCarousel />
+
+      <main
+        className="mt-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        id="deals"
+      >
         {coupons.length > 0
           ? coupons.map((coupon, index) => (
               <CouponCard key={index} {...coupon} />
