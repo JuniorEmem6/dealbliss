@@ -3,12 +3,12 @@ import React, { useState } from "react";
 const AdminPage = ({ url }) => {
   const [discount, setDiscount] = useState("");
   const [description, setDescription] = useState("");
-  let [coupon, setCoupon] = useState("");
+  let [code, setCode] = useState("");
   let [link, setLink] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!coupon) {
+    if (!code) {
       coupon = "7HJQ440D3JPK";
     }
 
@@ -48,8 +48,8 @@ const AdminPage = ({ url }) => {
           </label>
           <input
             type="text"
-            value={coupon}
-            onChange={(e) => setCoupon(e.target.value)}
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
             className=" p-2 w-full rounded"
           />
         </div>
