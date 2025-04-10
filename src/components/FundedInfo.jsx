@@ -114,7 +114,7 @@ const InfoSectionFunded = () => {
             className="text-gray-600 
           text-[14px] mt-[14px] text-center"
           >
-            Congratulations! You have successfully used an Oraimo discount code
+            Congratulations! You have successfully used an FundedNext discount code
             .
           </p>
         </div>
