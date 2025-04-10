@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 
-const InfoSection = () => {
+const InfoSectionFunded = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("https://dealblissngbackkend-production.up.railway.app/api/email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email }),
-    });
+    const response = await fetch(
+      "https://dealblissngbackkend-production.up.railway.app/api/email",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      }
+    );
 
     if (response.status === 201) {
       alert("Email added successfully!");
@@ -50,10 +53,10 @@ const InfoSection = () => {
       >
         <div className="mt-[35px] lg:w-[900px]">
           <h1 className="text-left lg:text-center text-[19px] font-bold">
-            How to use Oraimo Discount Code
+            How to use your FundedNext Discount Code
           </h1>
           <p className="text-gray-600 text-left lg:text-center text-[14px]">
-            Save big on your favorite Oraimo Product with our exclusive discount
+            Save big on your FundedNext account with our exclusive discount
             codes.
           </p>
           <p className="text-gray-600 text-left lg:text-center text-[14px] mt-[14px] lg:mt-0">
@@ -62,41 +65,48 @@ const InfoSection = () => {
 
           <ul className="mt-[10px] list-disc ml-[15px] lg:ml-[250px]">
             <li className="text-gray-800">
-              Visit the Oraimo Store{" "}
-              <a href="https://ng.oraimo.com?affiliate_code=gQU41bWUcc">
-                <span className="text-red-500">here</span>
+              Visit the FundedNext Website – Go to the FundedNext website to
+              explore their funding options and challenges.{" "}
+              
+            </li>
+            <li className="text-gray-800 mt-[5px]">
+              Sign In or Sign Up – If you're new,{" "}
+              <a href="https://fundednext.com/?fpr=aniekan61">
+                <span className="text-red-500">create an account</span>
               </a>
+              ; if you already have one, just{" "}
+              <a href="https://fundednext.com/?fpr=aniekan61">
+                <span className="text-red-500">sign in</span>
+              </a>
+              .
             </li>
             <li className="text-gray-800 mt-[5px]">
-              Sign in or Sign up if you are new
+              Browse Account Options – Choose from a variety of funded accounts
+              and evaluation accounts that fit your trading goals.
             </li>
             <li className="text-gray-800 mt-[5px]">
-              Browse through a wide range of accessories like Powerbank, earbud
-              etc.
+              Add to Cart – Once you've selected your desired account, add it to
+              your shopping cart.
             </li>
             <li className="text-gray-800 mt-[5px]">
-              Add your favorite item to the shopping cart.
-            </li>
-            <li className="text-gray-800 mt-[5px]">
-              Go to checkout, once you 're ready, proceed to the checkout page
-              by clicking the cart icon.
+              Proceed to Checkout – When you’re ready, click on the cart icon
+              and proceed to checkout.
             </li>
 
             <li className="text-gray-800 mt-[5px]">
-              Look for the field labeled "enter your discount Code".
+              Enter Discount Code – Look for the "Enter your discount code"
+              field and enter the code from Deal Bliss.
             </li>
             <li className="text-gray-800 mt-[5px]">
-              Enter the relevant discount code from Deal Bliss..
+              Apply Code – Click "Apply" to validate your discount Deal.
             </li>
             <li className="text-gray-800 mt-[5px]">
-              Click "Apply" to validate the coupon.
+              Check Discount – Your discount should be reflected in the order
+              total.
             </li>
             <li className="text-gray-800 mt-[5px]">
-              The discount should be reflected in your order total.
-            </li>
-            <li className="text-gray-800 mt-[5px]">
-              Proceed to payment online or at delivery and complete your
-              purchase.
+              Complete Your Purchase – Finish up by making your payment and
+              getting started with FundedNext.
             </li>
           </ul>
 
@@ -112,29 +122,30 @@ const InfoSection = () => {
         <div className="lg:w-[600px]">
           <div>
             <h1 className="text-left lg:text-center text-[19px] font-bold mt-[15px]">
-              Tips for Getting the Best Oraimo Deals
+              Tips for Getting the Best FundedNext Deals
             </h1>
 
             <ul className="mt-[10px] list-disc ml-[15px] lg:ml-[100px]">
               <li className="text-gray-800 mt-[5px]">
-                Sign up for an Oraimo account to earn 100 reward points
-                instantly and up to 500 points with purchases. Redeem these
-                points for discounts on future orders.
+                Sign Up and Get Started: When you sign up for FundedNext, you’ll
+                unlock exclusive deals and promotions to make your trading
+                journey even better.
               </li>
               <li className="text-gray-800 mt-[5px]">
-                Use the Deal Bliss Coupon code to enjoy a 5% discount on any
-                Oraimo product you purchase and take advantage of Daily Deals
-                offering up to 59% off on selected items.
+                Use the Deal Bliss Coupon Code: Don’t forget to use the discount
+                code at Deal Bliss to get a discount when purchasing an account
+                on FundedNext.
               </li>
               <li className="text-gray-800 mt-[5px]">
-                Combine rewards points, coupon codes and daily deals for maximum
-                savings.
+                Start Your Trading Journey Today: Ready to trade with
+                professional capital? FundedNext makes it easy to get started
+                and scale your trading career.
               </li>
             </ul>
 
             <p
               className="text-gray-600 
-          text-[14px] mt-[14px] ml-[30px] lg:ml-[90px]"
+          text-[14px] mt-[14px] ml-[50px] lg:ml-[90px]"
             >
               Start saving today and enjoy top quality Oraimo accessories at
               unbeatable prices.
@@ -145,38 +156,32 @@ const InfoSection = () => {
 
       <div className="shadow-lg bg-white rounded-[10px] p-[15px] mb-[15px] mt-[20px] lg:mt-[50px] lg:ml-[400px] lg:w-[1000px]">
         <h2 className="text-center font-bold text-[18px]">
-          Contact Oraimo Customer Care
+          Contact FundedNext Customer Care
         </h2>
         <div className="">
           <div className="mt-[20px] lg:flex lg:items-center lg:justify-around">
-            <p className="text-[14px] mt-[5px]">
-              &#x1f4de; Phone: 0818 135 3103, 0809 604 0753
-            </p>
-            <p className="text-[14px] mt-[5px]">
-              &#x1f4f1; WhatsApp: 0701 761 8320, 090 162 79193
-            </p>
             <p className="mt-[5px] text-[14px]">
-              &#x1f4e8; Email: care.ng@oraimo.com
+              &#x1f4e8; Email: support@fundednext.com
             </p>
           </div>
           <div className="flex gap-9 justify-start lg:justify-center mt-[25px]">
             <a
-              href="https://facebook.com/oraimoNigeria"
+              href="https://www.facebook.com/fundednext"
               className="bg-[#00a046] text-white p-[5px]"
             >
               Facebook
             </a>
             <a
-              href="https://twitter.com/oraimoNigeria"
-              className="bg-[#00a046] text-white p-[5px]"
-            >
-              X
-            </a>
-            <a
-              href="https://instagram.com/oraimoNigeria"
+              href="https://www.instagram.com/fundednext"
               className="bg-[#00a046] text-white p-[5px]"
             >
               Instagram
+            </a>
+            <a
+              href="https://x.com/FundedNext"
+              className="bg-[#00a046] text-white p-[5px]"
+            >
+              X
             </a>
           </div>
         </div>
@@ -185,4 +190,4 @@ const InfoSection = () => {
   );
 };
 
-export default InfoSection;
+export default InfoSectionFunded;

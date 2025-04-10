@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LogoOraimo from "../assets/logo.png";
 import Logo from "../assets/oraimoLogo.png";
+import Funded from "../assets/funded.jpeg"
 import { RiMenu2Fill } from "react-icons/ri";
 import { MdCancel } from "react-icons/md";
 
-const Header = () => {
+const Header = ({FundedNext}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
@@ -18,7 +19,7 @@ const Header = () => {
             className="h-[50px] w-[50px] bg-white ml-[30px]"
           />
           <img
-            src={Logo}
+            src={FundedNext === "Oraimo" ? Logo : Funded}
             alt="coupon codes and affiliate links"
             className="h-[50px] w-[50px] ml-[25px] bg-white"
           />
@@ -39,13 +40,16 @@ const Header = () => {
 
       {/* Publish Button (visible in mobile navigation) */}
       {isNavOpen && (
-        <div className="block md:hidden mt-[20px] h-[150px] bg-green-300">
+        <div className="block md:hidden mt-[20px] h-[190px] bg-green-300">
           <ul>
             <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] md:text-[17px]">
               <a href="#home">Home</a>
             </li>
             <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] mt-[6px] md:text-[17px]">
-              <a href="#deals">Deals</a>
+              <a href="#deals"> Oraimo Deals</a>
+            </li>
+            <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] mt-[6px] md:text-[17px]">
+              <a href="#deals"> FundedNext Deals</a>
             </li>
             <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] mt-[6px] md:text-[17px]">
               {/* <Link to="/archive">How to use Code</Link> */}

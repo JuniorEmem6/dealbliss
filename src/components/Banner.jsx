@@ -4,20 +4,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import Oraimo from "../assets/oraimo.jpeg";
-// import Newage from "../assets/newage.jpeg";
 
-const platforms = [
-  {
-    name: "Oraimo Deals",
-    img: Oraimo,
-  },
-];
-
-const CouponCarousel = () => {
+const CouponCarousel = ({platforms}) => {
   return (
     <div className="w-full max-w-4xl mx-auto py-5 mt-[14px]">
-      <a href="https://ng.oraimo.com?affiliate_code=gQU41bWUcc">
+      <a href={platforms.link}>
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
@@ -36,9 +27,9 @@ const CouponCarousel = () => {
                   alt={platform.name}
                   className="w-full h-32 object-cover rounded-md mb-4"
                 />
-                <h3 className="text-lg font-semibold text-gray-700">
+                <a className="text-lg font-semibold text-gray-700">
                   {platform.name}
-                </h3>
+                </a>
               </div>
             </SwiperSlide>
           ))}
