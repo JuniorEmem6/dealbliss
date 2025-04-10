@@ -114,7 +114,7 @@ const InfoSectionFunded = () => {
             className="text-gray-600 
           text-[14px] mt-[14px] text-center"
           >
-            Congratulations! You have successfully used an FundedNext discount code
+            Congratulations! You have successfully used an FundedNext discount code and saved your account.
             .
           </p>
         </div>
@@ -157,7 +157,7 @@ const InfoSectionFunded = () => {
               &#x1f4e8; Email: support@fundednext.com
             </p>
           </div>
-          <div className="flex gap-9 justify-start lg:justify-center mt-[25px]">
+          <div className="flex gap-3 justify-start lg:justify-center mt-[25px]">
             <a
               href="https://www.facebook.com/fundednext"
               className="bg-[#00a046] text-white p-[5px]"
@@ -177,7 +177,7 @@ const InfoSectionFunded = () => {
               X
             </a>
             <a
-              href="https://discord.com/invite/fundednext-945622549373526056"
+              href="https://x.com/FundedNext"
               className="bg-[#00a046] text-white p-[5px]"
             >
               Discord
