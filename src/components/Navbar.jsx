@@ -40,22 +40,22 @@ const Header = ({FundedNext}) => {
 
       {/* Publish Button (visible in mobile navigation) */}
       {isNavOpen && (
-        <div className="block md:hidden mt-[20px] h-[190px] bg-green-300">
+        <div className="block md:hidden mt-[20px] h-[190px] bg-green-200">
           <ul>
-            <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] md:text-[17px]">
+            <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] md:text-[15px]">
               <a href="#home">Home</a>
             </li>
-            <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] mt-[6px] md:text-[17px]">
-              <a href="#deals"> Oraimo Deals</a>
+            <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] mt-[6px] md:text-[15px]">
+              <a href="#dealsoraimo"> Oraimo Deals</a>
             </li>
-            <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] mt-[6px] md:text-[17px]">
-              <a href="#deals"> FundedNext Deals</a>
+            <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] mt-[6px] md:text-[15px]">
+              <a href="#dealsfunded"> FundedNext Deals</a>
             </li>
-            <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] mt-[6px] md:text-[17px]">
+            <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] mt-[6px] md:text-[15px]">
               {/* <Link to="/archive">How to use Code</Link> */}
               <a href="#use">How to use Code</a>
             </li>
-            <li className="hover:text-blue-600 text-gray-500 text-[21px] font-semibold ml-[20px] mt-[6px] md:text-[17px]">
+            <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] mt-[6px] md:text-[15px]">
               <a href="#contact">Contact</a>
             </li>
           </ul>

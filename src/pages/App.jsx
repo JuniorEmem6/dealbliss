@@ -67,7 +67,7 @@ const Home = () => {
         }
       />
 
-      <div className="flex justify-around bg-[lightgreen] rounded-[15px] w-[400px] ml-[100px] p-[15px] lg:ml-[750px]">
+      <div className="flex justify-around bg-[lightgreen] rounded-[15px] w-[350px] p-[15px] lg:ml-[750px]">
         <a onClick={() => setStore("Oraimo")}>Oraimo Deals</a>
         <p>|</p>
         <a onClick={() => setStore("Funded")}>FundedNext Deals</a>
@@ -77,7 +77,7 @@ const Home = () => {
         <>
           <main
             className="mt-7 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-            id="deals"
+            id="dealsoraimo"
           >
             {OraimoCoupons.length > 0
               ? OraimoCoupons.map((coupon, index) => (
@@ -97,7 +97,7 @@ const Home = () => {
         <>
         <main
           className="mt-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-          id="deals"
+          id="dealsfunded"
         >
           {fundedNextCoupons.length > 0
             ? fundedNextCoupons.map((coupon, index) => (
