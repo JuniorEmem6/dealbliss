@@ -143,13 +143,6 @@ const InfoSectionFunded = () => {
               </li>
             </ul>
 
-            <p
-              className="text-gray-600 
-          text-[14px] mt-[14px] ml-[50px] lg:ml-[90px]"
-            >
-              Start saving today and enjoy top quality Oraimo accessories at
-              unbeatable prices.
-            </p>
           </div>
         </div>
       </div>
