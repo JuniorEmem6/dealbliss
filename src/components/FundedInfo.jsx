@@ -149,7 +149,7 @@ const InfoSectionFunded = () => {
 
       <div className="shadow-lg bg-white rounded-[10px] p-[15px] mb-[15px] mt-[20px] lg:mt-[50px] lg:ml-[400px] lg:w-[1000px]">
         <h2 className="text-center font-bold text-[18px]">
-          Contact FundedNext Customer Care
+          FundedNext Customer Service
         </h2>
         <div className="">
           <div className="mt-[20px] lg:flex lg:items-center lg:justify-around">
@@ -175,6 +175,12 @@ const InfoSectionFunded = () => {
               className="bg-[#00a046] text-white p-[5px]"
             >
               X
+            </a>
+            <a
+              href="https://discord.com/invite/fundednext-945622549373526056"
+              className="bg-[#00a046] text-white p-[5px]"
+            >
+              Discord
             </a>
           </div>
         </div>
