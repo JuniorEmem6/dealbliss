@@ -29,7 +29,7 @@ const Home = () => {
           }
         });
       });
-    setOraimoCoupons(Ora);
+    // setOraimoCoupons(Ora);
     setFundedNextCoupons(fun);
   }, []);
 
@@ -73,7 +73,7 @@ const Home = () => {
         <a onClick={() => setStore("Funded")}>FundedNext Deals</a>
       </div> */}
 
-      {store === "Oraimo" ? (
+      {/* {store === "Oraimo" ? (
         <>
           <main
             className="mt-7 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
@@ -94,7 +94,7 @@ const Home = () => {
           <InfoSection />
         </>
       ) : (
-        <>
+        <> */}
         <main
           className="mt-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           id="dealsfunded"
@@ -112,8 +112,8 @@ const Home = () => {
         }
       />
       <InfoSectionFunded />
-        </>
-      )}
+        {/* </> */}
+      {/* )} */}
 
       <Footer />
     </div>
