@@ -45,9 +45,9 @@ const Header = ({FundedNext}) => {
             <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] md:text-[15px]">
               <a href="#home">Home</a>
             </li>
-            <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] mt-[6px] md:text-[15px]">
+            {/* <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] mt-[6px] md:text-[15px]">
               <a href="#dealsoraimo"> Oraimo Deals</a>
-            </li>
+            </li> */}
             <li className="hover:text-blue-600 text-gray-500 text-[19px] font-semibold ml-[20px] mt-[6px] md:text-[15px]">
               <a href="#dealsfunded"> FundedNext Deals</a>
             </li>

@@ -12,7 +12,7 @@ const Home = () => {
   const [OraimoCoupons, setOraimoCoupons] = useState([]);
   const [fundedNextCoupons, setFundedNextCoupons] = useState([]);
 
-  const [store, setStore] = useState("Oraimo");
+  const [store, setStore] = useState("FundedNext");
 
   useEffect(() => {
     // Fetch coupons and links from backend
@@ -67,11 +67,11 @@ const Home = () => {
         }
       />
 
-      <div className="flex justify-around bg-[lightgreen] rounded-[15px] w-[330px] p-[15px] lg:ml-[750px]">
+      {/* <div className="flex justify-around bg-[lightgreen] rounded-[15px] w-[330px] p-[15px] lg:ml-[750px]">
         <a onClick={() => setStore("Oraimo")}>Oraimo Deals</a>
         <p>|</p>
         <a onClick={() => setStore("Funded")}>FundedNext Deals</a>
-      </div>
+      </div> */}
 
       {store === "Oraimo" ? (
         <>
