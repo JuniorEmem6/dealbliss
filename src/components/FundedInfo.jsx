@@ -177,7 +177,7 @@ const InfoSectionFunded = () => {
               X
             </a>
             <a
-              href="https://x.com/FundedNext"
+              href="https://discord.gg/fundednext-945622549373526056"
               className="bg-[#00a046] text-white p-[5px]"
             >
               Discord
