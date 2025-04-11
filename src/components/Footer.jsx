@@ -100,11 +100,11 @@ const Footer = () => {
           </h1>
 
           <ul className="text-[15px] mt-[6px] text-black">
-            <li>* Get verified Oraimo coupon codes.</li>{" "}
+            <li>* Get verified coupon codes.</li>{" "}
             <li>
               * ⁠When purchasing real products, you can save significantly.{" "}
             </li>{" "}
-            <li>* ⁠ All Oraimo products come with a 12-month warranty. </li>{" "}
+            <li>* ⁠ All products come with a 12-month warranty. </li>{" "}
             <li>* ⁠Codes are often updated to keep your savings flowing.</li>
           </ul>
 
