@@ -88,7 +88,7 @@ const Footer = () => {
             Welcome to Deal Bliss, your one-stop shop for finding great coupon
             codes and saving money on your favourite tech gear! At Deal Bliss,
             we're dedicated to helping you find the best offers on genuine
-            Oraimo products such as power banks, headphones, and smartwatches.
+            platform like FundedNext and more.
             We know that everyone enjoys a good deal, so we've made it our duty
             to link you with exclusive deals that make high-quality products
             more inexpensive than ever.
@@ -141,7 +141,7 @@ const Footer = () => {
             Furthermore, the discount codes and discounts we share with you are
             always valid and do not expire, so you can take advantage of the
             savings whenever you want to shop. Deal Bliss collaborates with a
-            variety of reputable brands, including Oraimo and others. When you
+            variety of reputable brands, including FundedNext and others. When you
             make a purchase using one of our affiliate links, we may receive a
             commission at no additional cost to you. Thank you for your support
             of Deal Bliss!
