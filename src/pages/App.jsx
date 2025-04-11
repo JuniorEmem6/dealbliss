@@ -24,9 +24,9 @@ const Home = () => {
         data.map((coupon) => {
           if (!coupon.link.includes("aniekan61")) {
             Ora.push(coupon);
-          } else {
-            fun.push(coupon);
-          }
+          } //else {
+          //   fun.push(coupon);
+          // }
         });
       });
     // setOraimoCoupons(Ora);
