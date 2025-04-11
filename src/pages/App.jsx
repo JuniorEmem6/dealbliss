@@ -162,7 +162,7 @@ const CouponCard = ({ _id, discount, description, code, link, used }) => {
             });
         }}
       >
-        <a href={link}>{store === "Oraimo" ? "Shop Now" : "Sign Up"}</a>
+        <a href={link}>{mainLogo === "Oraimo" ? "Shop Now" : "Sign Up"}</a>
       </button>
     </div>
   );
