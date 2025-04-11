@@ -27,7 +27,7 @@ const CouponCarousel = ({platforms}) => {
                   alt={platform.name}
                   className="w-full h-32 object-cover rounded-md mb-4"
                 />
-                <a className="text-lg font-semibold text-gray-700">
+                <a href="https://fundednext.com/?fpr=aniekan61" className="text-lg font-semibold text-gray-700">
                   {platform.name}
                 </a>
               </div>

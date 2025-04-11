@@ -22,10 +22,10 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => {
         data.map((coupon) => {
-          if (!coupon.link.includes("aniekan61")) {
-            Ora.push(coupon);
+          if (coupon.link.includes("aniekan61")) {
+             fun.push(coupon);
           } //else {
-          //   fun.push(coupon);
+          //   Ora.push(coupon);
           // }
         });
       });
