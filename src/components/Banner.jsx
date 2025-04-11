@@ -8,7 +8,7 @@ import { Autoplay } from "swiper/modules";
 const CouponCarousel = ({platforms}) => {
   return (
     <div className="w-full max-w-4xl mx-auto py-5 mt-[14px]">
-      <a href={platforms.link}>
+      <a href="https://fundednext.com/?fpr=aniekan61">
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
