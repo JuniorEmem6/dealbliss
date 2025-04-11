@@ -28,9 +28,10 @@ const Home = () => {
           //   Ora.push(coupon);
           // }
         });
+        setFundedNextCoupons(fun);
       });
     // setOraimoCoupons(Ora);
-    setFundedNextCoupons(fun);
+    
   }, []);
 
   return (

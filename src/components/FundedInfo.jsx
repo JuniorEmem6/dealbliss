@@ -112,7 +112,7 @@ const InfoSectionFunded = () => {
 
           <p
             className="text-gray-600 
-          text-[14px] mt-[14px] text-center"
+          text-[14px] mt-[14px] text-center lg:ml-[100px]"
           >
             Congratulations! You have successfully used your FundedNext discount code and saved your account.
             .
