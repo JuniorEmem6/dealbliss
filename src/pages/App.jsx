@@ -39,7 +39,7 @@ const Home = () => {
 
       <div className="text-center mt-[40px]" id="home">
         <h1 className="leading-[25px] font-medium text-[26px]">
-        {store === "Oraimo" ? "Oraimo Discount Code: Up to 30% + Extra 5% Code" : "30% Off + FundedNext Coupons | April 2025"} {" "}
+        {store === "Oraimo" ? "Oraimo Discount Code: Up to 30% + Extra 5% Code" : "120% Refund + FundedNext Coupons | April 2025"} {" "}
         </h1>
         <p className="mt-[10px]">
           The hub for the best {store === "Oraimo" ? "Oraimo" : "FundedNext"}{" "}
@@ -143,9 +143,9 @@ const CouponCard = ({ _id, discount, description, code, link, used }) => {
         </button>
       </div>
       <div className="flex bg-gray-100 items-center justify-between p-[5px]">
-        <span className="text-[11px]">
+        {/* <span className="text-[11px]">
           Total Uses: <span class="total-count">{used}</span>
-        </span>
+        </span> */}
       </div>
       <button
         className="block bg-green-600 text-white mt-4 text-center px-4 py-2 rounded hover:bg-green-700"
