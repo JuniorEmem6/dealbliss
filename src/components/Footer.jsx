@@ -74,7 +74,7 @@ const Footer = () => {
             Furthermore, the discount codes and discounts we share with you are
             always valid and do not expire, so you can take advantage of the
             savings whenever you want to shop. Deal Bliss collaborates with a
-            variety of reputable brands, including Oraimo and others. When you
+            variety of reputable brands, including FundedNext and others. When you
             make a purchase using one of our affiliate links, we may receive a
             commission at no additional cost to you. Thank you for your support
             of Deal Bliss!
