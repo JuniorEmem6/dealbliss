@@ -104,7 +104,7 @@ const Footer = () => {
             <li>
               * ⁠When purchasing real products, you can save significantly.{" "}
             </li>{" "}
-            <li>* ⁠ All products come with a 12-month warranty. </li>{" "}
+            {/* <li>* ⁠ All products come with a 12-month warranty. </li>{" "} */}
             <li>* ⁠Codes are often updated to keep your savings flowing.</li>
           </ul>
 
